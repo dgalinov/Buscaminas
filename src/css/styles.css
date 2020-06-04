@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#divTablero {
+    border: 1px solid #333;
+    display: inline-block;
+}
+
+#result {
+    margin: 1em;
+}
+
+#numeroMinas {
+    width: 30.2em;
+}
+
+.col {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    vertical-align: top;
+    color: black;
+    line-height: 50px;
+    transition: all 0.2s;
+    cursor: not-allowed;
+}
+
+.mina {
+    background-color: red;
+}
+
+.col.hidden {
+    background-color: #242424;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.col.hidden:hover {
+    background-color: #777777;
+}
+
+.row:last-child .column {
+    border-bottom: none;
+}
+
+.row .column:last-child {
+    border-right: none;
+}
+
+.numero {
+    background-color: #242424;
+    color: green;
+    font-size: 1 em !important;
+}
